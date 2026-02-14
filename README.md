@@ -31,7 +31,7 @@ To create a tool that:
 - Developer-friendly interface
 
 **🏗 System Architecture**
----
+
 User Query
 ↓
 Frontend UI (Streamlit)
@@ -47,7 +47,7 @@ Vector Index (FAISS)
 Retriever + Answer Generator
 ↓
 Response to User
----
+
 **🛠 Tech Stack:**
 
 1. Frontend
@@ -93,7 +93,7 @@ The application will open in your browser.
 - Ask questions about the code.
   
 **📂 Project Structure**
----
+
 RepoGuide/
 │
 ├── backend/
@@ -108,7 +108,7 @@ RepoGuide/
 ├── data/
 ├── requirements.txt
 └── README.md
----
+
 **🤝 Contribution:**
 
 Contributions and suggestions are welcome.
