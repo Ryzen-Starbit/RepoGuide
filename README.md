@@ -30,22 +30,24 @@ To create a tool that:
 - Intelligent code explanations
 - Developer-friendly interface
 
-**🏗 System Architecture:**
-
-User
-  ↓
-Frontend (Streamlit UI)
-  ↓
+**🏗 System Architecture**
+---
+User Query
+↓
+Frontend UI (Streamlit)
+↓
 Backend API (FastAPI)
-  ↓
-Repository Loader
-  ↓
-Code Processing & Embeddings
-  ↓
-Vector Search Index
-  ↓
+↓
+Repository Loader & Parser
+↓
+Embedding Generation
+↓
+Vector Index (FAISS)
+↓
 Retriever + Answer Generator
-
+↓
+Response to User
+---
 **🛠 Tech Stack:**
 
 1. Frontend
@@ -89,22 +91,24 @@ The application will open in your browser.
 - Enter repository URL.
 - Load repository.
 - Ask questions about the code.
-
-**📂 Project Structure:**
-
+  
+**📂 Project Structure**
+---
 RepoGuide/
 │
 ├── backend/
-│   ├── main.py
-│   ├── retriever.py
-│   └── loader.py
+│ ├── main.py
+│ ├── retriever.py
+│ ├── loader.py
+│ └── utils.py
 │
 ├── frontend/
-│   └── app.py
+│ └── app.py
 │
+├── data/
 ├── requirements.txt
 └── README.md
-
+---
 **🤝 Contribution:**
 
 Contributions and suggestions are welcome.
