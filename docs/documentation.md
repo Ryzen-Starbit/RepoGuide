@@ -1,10 +1,10 @@
-**1. Project Overview**
+##1. Project Overview
 
 Code Documentation Navigator (RepoGuide) is an AI-powered repository analysis system designed to help developers understand unfamiliar codebases efficiently. The system allows users to load a public GitHub repository and interact with it through natural language queries. Instead of manually browsing files and tracing logic, users can directly ask questions about the repository and receive contextual answers.
 
 The project combines semantic search, vector indexing and contextual answer generation to transform how developers explore codebases. It also provides structural analysis through complexity estimation and risk detection mechanisms.
 
-**2️. Problem Statement**
+##2️. Problem Statement
 
 Modern repositories often contain hundreds or thousands of files, making it difficult for developers to quickly understand how a project works. When joining a new team or contributing to an open-source project, developers typically spend significant time:
 
@@ -17,7 +17,7 @@ Traditional documentation is often incomplete or outdated. Manual exploration is
 
 This project addresses that problem by creating an automated system that analyzes repositories and enables intelligent interaction with the codebase.
 
-**3️. Objectives**
+##3️. Objectives
 
 The primary objective of this project is to simplify repository exploration by enabling AI-assisted understanding of codebases. The system aims to reduce onboarding time, improve developer productivity and provide structural insights about software projects. It focuses on:
 
@@ -26,7 +26,7 @@ The primary objective of this project is to simplify repository exploration by e
 3) Identifying complexity and potential risks
 4) Improving navigation through large projects
 
-**4️. System Architecture**
+##4️. System Architecture
 
 The system follows a layered architecture:
 
@@ -57,7 +57,7 @@ Response Display
 
 The frontend handles user interaction, while the backend manages repository processing, vector indexing, retrieval and answer generation.
 
-**5️. System Components**
+##5️. System Components
 
 1) _Frontend (Streamlit)_: The frontend provides a simple interface where users can:
 
@@ -89,7 +89,7 @@ The frontend handles user interaction, while the backend manages repository proc
 
 10) _Risk Detection_: Risk detection builds upon complexity analysis to determine change risk levels. Files with higher structural complexity are flagged as potentially high-risk areas, assisting developers in understanding which modules require careful modification.
 
-**6️. Workflow:**
+##6️. Workflow:
 
 * The user enters a GitHub repository URL.
 * The repository is cloned locally.
@@ -102,30 +102,28 @@ The frontend handles user interaction, while the backend manages repository proc
 * Context is passed to the answer generator.
 * A contextual response is displayed.
 
-**7️. Technology Stack:**
+##7️. Technology Stack:
 
 1) _Frontend:_
-
 - Streamlit
-- Backend:
+
+2) Backend:
 - FastAPI
 - Uvicorn
 
-2) _AI & Processing:_
-
+3) _AI & Processing:_
 - Sentence Transformers
 - FAISS
 
-3) _Programming Language:_
-
+4) _Programming Language:_
 - Python
 
-**8. Innovation & Practical Impact:**
+##8. Innovation & Practical Impact:
 
 This project demonstrates how AI can be applied to real-world software engineering workflows. Instead of being a generic chatbot, it is specifically designed for repository understanding and developer productivity.
 
 It enhances onboarding efficiency, assists in code review and provides automated structural insights that would otherwise require manual effort.
 
-**9. Conclusion**
+##9. Conclusion
 
 Code Documentation Navigator integrates semantic search, vector indexing and contextual retrieval to provide an intelligent repository exploration experience. It improves how developers interact with unfamiliar codebases and demonstrates practical AI integration in developer tooling.
