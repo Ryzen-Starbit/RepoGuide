@@ -62,7 +62,7 @@ The frontend handles user interaction, while the backend manages repository proc
 
 ##  5️. System Components
 
-### _Frontend (Streamlit)_: 
+### Frontend (Streamlit): 
 
 The frontend provides a simple interface where users can:
 
@@ -72,7 +72,7 @@ The frontend provides a simple interface where users can:
 - View generated answers and analysis
 - It communicates with the backend via REST API endpoints.
 
-### _Backend (FastAPI)_: 
+### Backend (FastAPI): 
 
 The backend handles all processing tasks. It exposes two main endpoints:
 
@@ -80,35 +80,35 @@ The backend handles all processing tasks. It exposes two main endpoints:
 - /ask for query-based retrieval and answer generation
 - The backend maintains the vector index and metadata required for retrieval.
 
-### _Repository Loader_: 
+### Repository Loader: 
 
 The repository loader clones the GitHub repository and extracts relevant source files. It ensures that only meaningful code files are processed, avoiding unnecessary data.
 
-###  _Code Parser and Chunking_:
+### Code Parser and Chunking:
 
 Large source files are divided into manageable chunks to improve embedding quality and retrieval precision. Each chunk retains metadata such as file path and content, enabling contextual analysis.
 
-### _Embedding Engine_: 
+### Embedding Engine: 
 
 Each code chunk is converted into a numerical vector representation using a sentence transformer model. These embeddings capture semantic meaning, allowing similarity-based search rather than keyword matching.
 
-### _Vector Index (FAISS)_: 
+### Vector Index (FAISS): 
 
 The embeddings are stored in a FAISS index for efficient similarity search. When a user submits a query, it is converted into an embedding and matched against stored vectors to retrieve the most relevant code segments.
 
-### _Retriever_: 
+### Retriever: 
 
 The retriever identifies top-k relevant code chunks based on semantic similarity. This ensures that answers are grounded in actual repository content.
 
-### _Answer Generator_: 
+### Answer Generator: 
 
 The system combines the retrieved code context and generates a natural-language explanation. This follows a Retrieval-Augmented Generation (RAG) approach, ensuring responses are context-aware.
 
-### _Complexity Analyzer_: 
+### Complexity Analyzer: 
 
 The complexity analyzer evaluates code by detecting structural elements such as conditional statements, loops, logical operators and exception handling blocks. Based on these elements, it assigns a complexity score that helps identify intricate or potentially difficult-to-maintain files.
 
-### _Risk Detection_: 
+### Risk Detection: 
 
 Risk detection builds upon complexity analysis to determine change risk levels. Files with higher structural complexity are flagged as potentially high-risk areas, assisting developers in understanding which modules require careful modification.
 
@@ -127,18 +127,18 @@ Risk detection builds upon complexity analysis to determine change risk levels. 
 
 ## 7️. Technology Stack:
 
-1) _Frontend:_
+### 1) Frontend:
 - Streamlit
 
-2) Backend:
+### 2) Backend:
 - FastAPI
 - Uvicorn
 
-3) _AI & Processing:_
+### 3) AI & Processing:
 - Sentence Transformers
 - FAISS
 
-4) _Programming Language:_
+### 4) Programming Language:
 - Python
 
 ## 8. Innovation & Practical Impact:
