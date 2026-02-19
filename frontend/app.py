@@ -1,6 +1,6 @@
 import streamlit as st
 import requests
-st.title("Code Documentation Navigator")
+st.title("RepoGuide: Your Codebase Navigator")
 if "repo_loaded" not in st.session_state:
     st.session_state.repo_loaded = False
 repo = st.text_input("GitHub Repo URL")
