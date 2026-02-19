@@ -52,15 +52,15 @@ Response to User
 
 ## 🛠 Tech Stack:
 
-1. Frontend
+### 1. Frontend
    - Streamlit
-2. Backend
+### 2. Backend
    - FastAPI
    - Uvicorn
-3. AI / Processing
+### 3. AI / Processing
    - Sentence Transformers
    - FAISS vector search
-4. Other Tools
+### 4. Other Tools
    - Python
    - Git repository cloning utilities
 
@@ -104,6 +104,9 @@ RepoGuide/
 │ ├── retriever.py
 │ ├── loader.py
 │ └── utils.py
+│
+├── docs/
+│ └── documetaion.md
 │
 ├── frontend/
 │ └── app.py
