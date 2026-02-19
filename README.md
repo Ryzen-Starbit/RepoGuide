@@ -1,8 +1,8 @@
-**🚀 RepoGuide – Code Documentation Navigator:**
+# 🚀 RepoGuide – Code Documentation Navigator: 
 
 RepoGuide is an intelligent repository exploration tool that helps developers quickly understand unfamiliar codebases. It allows users to load a GitHub repository and ask questions about the code, helping developers onboard faster, analyze logic, and navigate projects efficiently.
 
-**📌 Problem:**
+## 📌 Problem:
 
 Understanding a new codebase is difficult due to:
 - Large project structures
@@ -12,7 +12,7 @@ Understanding a new codebase is difficult due to:
 
 RepoGuide solves this by enabling intelligent code querying and repository analysis.
 
-**🎯 Project Objective:**
+## 🎯 Project Objective: 
 
 To create a tool that:
 
@@ -20,7 +20,7 @@ To create a tool that:
 - Enables natural-language code queries
 - Helps developers understand projects faster
 
-**✨ Features:**
+## ✨ Features: 
 
 - Load GitHub repositories directly
 - Ask questions about project code
@@ -30,8 +30,9 @@ To create a tool that:
 - Intelligent code explanations
 - Developer-friendly interface
 
-**🏗 System Architecture**
+## 🏗 System Architecture:
 
+```
 User Query
 ↓
 Frontend UI (Streamlit)
@@ -47,8 +48,9 @@ Vector Index (FAISS)
 Retriever + Answer Generator
 ↓
 Response to User
+```
 
-**🛠 Tech Stack:**
+## 🛠 Tech Stack:
 
 1. Frontend
    - Streamlit
@@ -62,7 +64,7 @@ Response to User
    - Python
    - Git repository cloning utilities
 
-**⚙ Installation:**
+## ⚙ Installation: 
 
 1. Clone repository -
 git clone <your-repository-url>
@@ -78,22 +80,23 @@ python -m venv venv
 4. Install dependencies
 pip install -r requirements.txt
 
-**▶ Running the Application:**
+## ▶ Running the Application:
 
 1. Start backend server: uvicorn backend.main:app --reload
 2. Start frontend: streamlit run frontend/app.py
 
 The application will open in your browser.
 
-**📖 Usage:**
+## 📖 Usage:
 
 - Launch backend and frontend.
 - Enter repository URL.
 - Load repository.
 - Ask questions about the code.
   
-**📂 Project Structure**
+## 📂 Project Structure:
 
+```
 RepoGuide/
 │
 ├── backend/
@@ -108,8 +111,9 @@ RepoGuide/
 ├── data/
 ├── requirements.txt
 └── README.md
+```
 
-**🤝 Contribution:**
+## 🤝 Contribution: 
 
 Contributions and suggestions are welcome.
 Steps:
