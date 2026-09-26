@@ -2,6 +2,12 @@
 
 RepoGuide is an intelligent repository exploration tool that helps developers quickly understand unfamiliar codebases. It allows users to load a GitHub repository and ask questions about the code, helping developers onboard faster, analyze logic, and navigate projects efficiently.
 
+## 🎥 Demo
+
+[![RepoGuide Demo](https://img.youtube.com/vi/knJW_YISkhw/maxresdefault.jpg)](https://youtu.be/knJW_YISkhw)
+
+▶️ **[Watch the full demo on YouTube](https://youtu.be/knJW_YISkhw)**
+
 ## 📌 Problem:
 
 Understanding a new codebase is difficult due to:
