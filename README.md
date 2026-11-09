@@ -73,7 +73,7 @@ Response to User
 ## ⚙ Installation: 
 
 1. Clone repository -
-git clone <your-repository-url>
+git clone https://github.com/Ryzen-Starbit/RepoGuide
 cd RepoGuide
 
 2. Create virtual environment -
