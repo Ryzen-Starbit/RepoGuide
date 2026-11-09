@@ -74,7 +74,6 @@ Response to User
 
 1. Clone repository -
 git clone https://github.com/Ryzen-Starbit/RepoGuide
-cd RepoGuide
 
 2. Create virtual environment -
 python -m venv venv
